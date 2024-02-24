@@ -1,3 +1,5 @@
+// Criar um programa que imprime "Hello, World!" na tela.
+
 import java.util.Scanner;
 
 public class Exercicio_1 {

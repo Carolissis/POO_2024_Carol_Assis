@@ -1,3 +1,6 @@
+//Criar um programa que pede ao usuário para digitar um número e depois imprime se
+//ele é positivo, negativo ou zero
+
 import java.util.Scanner;
 
 public class Exercicio_2 {
@@ -9,11 +12,15 @@ public class Exercicio_2 {
         System.out.printf("Informe um número: ");
         num = ler.nextInt();
 
-        if((num%2) == 0){
-            System.out.println("O número é par.");
+        if(num > 0){
+            System.out.println("O número é positivo.");
         }
-        else {
-            System.out.println("O número é impar.");
+        else if(num < 0) {
+            System.out.println("O número é negativo.");
+        } else {
+            System.out.println("O número é zero.");
         }
+
+        ler.close();
     }
 }

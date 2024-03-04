@@ -74,10 +74,10 @@ public class Jogo {
                         System.out.printf("Nome do jogador que deseja saber a pontuação: ");
                         String jogador = ler.nextLine();
     
-                        int indice = Arrays.asList(jogadores).indexOf(jogador); 
+                        int indice2 = Arrays.asList(jogadores).indexOf(jogador); 
     
-                        if (indice != -1) {
-                            System.out.println(jogador + " tem " + pontuacoes[indice] + " pontos");
+                        if (indice2 != -1) {
+                            System.out.println(jogador + " tem " + pontuacoes[indice2] + " pontos");
                         } else {
                             System.out.println("O nome " + jogador + " não foi encontrado no jogo.");
                         }
@@ -89,21 +89,21 @@ public class Jogo {
                         if(nivel == 1){
 
                             for(int i = 1; i <= qnt; i ++){
-                                System.out.printf(jogador[i] + " coletou " + moedasNv1[i] " moedas");
+                                System.out.printf(jogador[i] + " coletou " + moedasNv1[i] + " moedas");
                             }
                             break; 
                             
                         } else if(nivel == 2){
 
                             for(int i = 1; i <= qnt; i ++){
-                                System.out.printf(jogador[i] + " coletou " + moedasNv2[i] " moedas");
+                                System.out.printf(jogador[i] + " coletou " + moedasNv2[i] + " moedas");
                             }
                             break;
 
                         } else if(nivel == 3){
 
                             for(int i = 1; i <= qnt; i ++){
-                                System.out.printf(jogador[i] + " coletou " + moedasNv3[i] " moedas");
+                                System.out.printf(jogador[i] + " coletou " + moedasNv3[i] + " moedas");
                             }
                             break;
 

@@ -1,0 +1,11 @@
+Conta conta = contas.stream()
+inicia uma operação de stream na lista contas. Stream é uma sequência de elementos que suporta várias operações de agregação sequencial e paralela.
+
+filter(c -> c.numeroConta == numeroConta)
+é uma operação intermediária que recebe um predicado como argumento. O predicado aqui é c -> c.numeroConta == numeroConta, que significa "para cada Conta c na lista, mantenha apenas aquelas cujo numeroConta é igual ao valor armazenado na variável numeroConta". 
+
+findFirst()
+é uma operação terminal que retorna o primeiro elemento do stream que passou pelo filtro (se houver). O resultado é embrulhado em um objeto Optional. Optional é uma classe de contêiner que pode ou não conter um valor não nulo, sendo usado aqui porque pode não haver nenhuma conta que corresponda ao critério de pesquisa, ou seja, a busca pode não encontrar nenhum resultado.
+
+orElse(null);
+é chamado no objeto Optional. Ele retorna o valor contido no Optional se presente; caso contrário, retorna null. Isso significa que se uma conta com o número fornecido for encontrada, a variável conta armazenará essa instância de Conta. Se não, conta será nula. Isso é útil para verificar se a operação de busca foi bem-sucedida e tomar as ações apropriadas no código subsequente.

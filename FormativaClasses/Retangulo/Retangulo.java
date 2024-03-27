@@ -4,7 +4,7 @@ public class Retangulo{
 
     public Retangulo(float altura, float largura){
         this.altura = altura;
-        this.largura = altura;
+        this.largura = largura;
     }
     public float getAltura(){
         return this.altura;
@@ -18,10 +18,10 @@ public class Retangulo{
     public void setLargura(float largura){
         this.largura = largura;
     }
-    public float calcularArea(float altura, float largura){
-        return altura * largura;
+    public float calcularArea(){
+        return this.altura * this.largura;
     }
-    public float calcularPerimetro(float altura, float largura){
-        return (2 * altura) + (2 * largura);
+    public float calcularPerimetro(){
+        return 2 *( this.altura + this.largura);
     }
 }

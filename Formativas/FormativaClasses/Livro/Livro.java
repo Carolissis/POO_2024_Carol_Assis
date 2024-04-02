@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Livro{
     private String titulo;
     private String autor;

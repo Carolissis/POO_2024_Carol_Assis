@@ -1,11 +1,9 @@
-import java.util.Scanner;
-
 public class Triangulo{
-    private float a;
-    private float b;
-    private float c;
+    private double a;
+    private double b;
+    private double c;
 
-    public Triangulo(float a, float b, float c){
+    public Triangulo(double a, double b, double c){
         this.a = a;
         this.b = b;
         this.c = c;
@@ -18,10 +16,10 @@ public class Triangulo{
             return false;
         }
     }
-    public float calcularArea(){
+    public double calcularArea(){
         if(validarTriangulo()){
-            float s = (this.a + this.b + this.c) / 2;
-            float area = Math.sqrt(s * (s - this.a) * (s - this.b) * (s - this.c));
+            double s = (this.a + this.b + this.c) / 2;
+            double area = Math.sqrt(s * (s - this.a) * (s - this.b) * (s - this.c));
             return area;
         }
         else{

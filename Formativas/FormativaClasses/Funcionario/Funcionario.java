@@ -8,9 +8,9 @@ public class Funcionario{
         this.cargo = cargo;
         this.salario = salario;
     }
-    public double calcularAumento(float porcentagem){
+    public double calcularAumento(double porcentagem){
         double aumento = this.salario * (porcentagem / 100);
         this.salario += porcentagem;
-        return salario;
+        return this.salario;
     }
 }
